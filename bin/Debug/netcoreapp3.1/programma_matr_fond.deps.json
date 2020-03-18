@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "programma_matr_fond/1.0.0": {
+        "runtime": {
+          "programma_matr_fond.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "programma_matr_fond/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

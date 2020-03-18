@@ -1,0 +1,11 @@
+D:\C#\programma_matr_fond\obj\Debug\netcoreapp3.1\programma_matr_fond.csprojAssemblyReference.cache
+D:\C#\programma_matr_fond\obj\Debug\netcoreapp3.1\programma_matr_fond.AssemblyInfoInputs.cache
+D:\C#\programma_matr_fond\obj\Debug\netcoreapp3.1\programma_matr_fond.AssemblyInfo.cs
+D:\C#\programma_matr_fond\bin\Debug\netcoreapp3.1\programma_matr_fond.exe
+D:\C#\programma_matr_fond\bin\Debug\netcoreapp3.1\programma_matr_fond.deps.json
+D:\C#\programma_matr_fond\bin\Debug\netcoreapp3.1\programma_matr_fond.runtimeconfig.json
+D:\C#\programma_matr_fond\bin\Debug\netcoreapp3.1\programma_matr_fond.runtimeconfig.dev.json
+D:\C#\programma_matr_fond\bin\Debug\netcoreapp3.1\programma_matr_fond.dll
+D:\C#\programma_matr_fond\bin\Debug\netcoreapp3.1\programma_matr_fond.pdb
+D:\C#\programma_matr_fond\obj\Debug\netcoreapp3.1\programma_matr_fond.dll
+D:\C#\programma_matr_fond\obj\Debug\netcoreapp3.1\programma_matr_fond.pdb
