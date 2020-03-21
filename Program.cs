@@ -315,7 +315,7 @@ namespace proga1
                                 itog[i, 0] = i;
                                 for (int j = 0; j < otvet.GetLength(0); j++)
                                 {
-                                    if (otvet[j, 0] == i)
+                                    if ((otvet[j, 0] == i) && (otvet[j, 1] != 0))
                                     {
                                         itog[i, 1] = otvet[j, 1];
                                     }
@@ -678,7 +678,7 @@ namespace proga1
                     itog[i, 0] = i;
                     for (int j = 0; j < otvet.GetLength(0); j++)
                     {
-                        if (otvet[j, 0] == i)
+                        if ((otvet[j, 0] == i) && (otvet[j, 1] != 0))
                         {
                             itog[i, 1] = otvet[j, 1];
                         }
