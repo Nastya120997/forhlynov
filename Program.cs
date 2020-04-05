@@ -16,21 +16,50 @@ namespace proga1
             string vopros = Console.ReadLine();
             if (vopros == "да") 
             {
+                               
+                Console.WriteLine("Введите путь к файлу пассивов: ");
+                string adres_pass = Console.ReadLine();
+                FileInfo fileInf = new FileInfo(adres_pass);
                 
-                
+                              
+                if (fileInf.Exists==false)
+                {
+                    Console.WriteLine("Неправильный путь к файлу! Игнорируйте последующий текст, закройте окно и попробуйте заново! ");
+
+                }
+
+
+                Console.WriteLine("Введите путь к файлу активов: ");
+                string adres_act = Console.ReadLine();
+                FileInfo fileInf1 = new FileInfo(adres_act);
+                if (fileInf1.Exists == false)
+                {
+                    Console.WriteLine("Неправильный путь к файлу! Игнорируйте последующий текст, закройте окно и попробуйте заново! ");
+
+                }
+
+                Console.WriteLine("Введите путь к файлу пересечений: ");
+                string adres_x = Console.ReadLine();
+                FileInfo fileInf2 = new FileInfo(adres_x);
+                if (fileInf2.Exists == false)
+                {
+                    Console.WriteLine("Неправильный путь к файлу! Игнорируйте последующий текст, закройте окно и попробуйте заново! ");
+
+                }
+
                 int kol_strok_pass = 0;
                 ref int PassRef = ref kol_strok_pass;
-                string adres_pass = @"D:\fondpas.txt";
+                //string adres_pass = @"D:\fondpas.txt";
                 string[] vrem_pass = new string[2];
 
                 int kol_strok_act = 0;
                 ref int ActRef = ref kol_strok_act;
-                string adres_act = @"D:\fondact.txt";
+                //string adres_act = @"D:\fondact.txt";
                 string[] vrem_act = new string[2];
 
                 int kol_strok_x = 0;
                 ref int xRef = ref kol_strok_x;
-                string adres_x = @"D:\x.txt";
+                //string adres_x = @"D:\x.txt";
                 string[] vrem_x = new string[2];
 
                 using (StreamReader pp = new StreamReader(adres_pass, System.Text.Encoding.Default))// определяем число строк в файле пассивов
@@ -364,7 +393,20 @@ namespace proga1
                                 Console.WriteLine();
                             }
 
+                            //запись в файл
+                                                       
+                            Console.WriteLine("\n Итоговая матрица записана в файл d:\\fond.txt \n");
+                            
+                            FileStream file1 = new FileStream("d:\\fond.txt", FileMode.Create); //создаем файловый поток
+                            StreamWriter writer = new StreamWriter(file1); //создаем «потоковый писатель» и связываем его с файловым потоком
+                            for (int i = 0; i < fond.GetLength(0); i++)
+                            {
+                                writer.WriteLine();
+                                for (int j = 0; j < fond.GetLength(1); j++)
+                                writer.Write("{0,9} ", fond[i, j]); //записываем в файл    
+                            }
 
+                            writer.Close(); //закрываем поток
 
 
                         }
@@ -717,6 +759,21 @@ namespace proga1
                         Console.Write("{0,10} ", fond[i, j]);
                     Console.WriteLine();
                 }
+
+                Console.WriteLine("\n Итоговая матрица записана в файл d:\\fond.txt \n");
+
+                FileStream file1 = new FileStream("d:\\fond.txt", FileMode.Create); //создаем файловый поток
+                StreamWriter writer = new StreamWriter(file1); //создаем «потоковый писатель» и связываем его с файловым потоком
+                for (int i = 0; i < fond.GetLength(0); i++)
+                {
+                    writer.WriteLine();
+                    for (int j = 0; j < fond.GetLength(1); j++)
+                        writer.Write("{0,9} ", fond[i, j]); //записываем в файл    
+                }
+
+                writer.Close(); //закрываем поток
+
+
             }
 
 
